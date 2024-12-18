@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/game.css">
+</head>
+<body>
+    <div class="game_Wrap">
+        <div class="game">
+            <div class="game_Window">
+                <h3>숫자맞추기게임</h3>
+                <img id="imgBox" src="img/Untitled-5.png">
+                <div id="result" class="game_Result">UP / DOWN / BINGO</div>
+                <div id="chance" class="game_Chance">남은찬스 : 5번</div>
+                <div class="game_Btn">
+                    <input id="user" type = "number" placeholder="1부터 100까지의 수 입력" onkeypress="if(event.keyCode == 13) {play();}"/>
+                    <button id="play">시작</button>
+                    <button id="reset">재도전</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/game.js"></script>
+</body>
+</html>
